@@ -39,7 +39,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  filter: drop-shadow(0 0 40px rgba(108, 99, 255, 0.3));
+  filter: drop-shadow(0 0 60px rgba(108, 99, 255, 0.5)) drop-shadow(0 0 120px rgba(108, 99, 255, 0.2));
 }
 .hero-last {
   display: block;
@@ -92,8 +92,8 @@
   transform: translate(-50%, -50%);
   width: 400px;
   height: 400px;
-  background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
-  filter: blur(40px);
+  background: radial-gradient(circle, rgba(108, 99, 255, 0.5) 0%, transparent 70%);
+  filter: blur(50px);
   z-index: -1;
   animation: pulse 4s ease-in-out infinite;
 }

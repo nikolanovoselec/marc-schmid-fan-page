@@ -18,8 +18,8 @@ describe('ripples', () => {
 
     it('creates cursor ripple with smaller max radius', () => {
       const ripple = createRipple(100, 200, { cursor: true });
-      expect(ripple.maxRadius).toBeLessThanOrEqual(150);
-      expect(ripple.opacity).toBeLessThanOrEqual(0.08);
+      expect(ripple.maxRadius).toBeLessThanOrEqual(300);
+      expect(ripple.opacity).toBeLessThanOrEqual(0.25);
     });
   });
 
@@ -64,7 +64,7 @@ describe('ripples', () => {
     });
 
     it('respects max active ripple count', () => {
-      expect(shouldSpawnRipple(0, 3000, 5)).toBe(false);
+      expect(shouldSpawnRipple(0, 3000, 8)).toBe(false);
     });
   });
 });

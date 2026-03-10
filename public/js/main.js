@@ -199,7 +199,7 @@ import { shouldShowScrolledNav } from './nav.js';
   let lastCursorRipple = 0;
   window.addEventListener('mousemove', (e) => {
     const now = performance.now();
-    if (now - lastCursorRipple > 500) {
+    if (now - lastCursorRipple > 300) {
       ripples = [...ripples, createRipple(e.clientX, e.clientY, { cursor: true })];
       lastCursorRipple = now;
     }

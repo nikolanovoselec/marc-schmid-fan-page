@@ -1,12 +1,12 @@
-// public/js/ripples.js
+// ripples.js — Radial ripple engine
 
-const RANDOM_MAX_RADIUS = 300;
-const CURSOR_MAX_RADIUS = 150;
-const RANDOM_OPACITY = 0.15;
-const CURSOR_OPACITY = 0.08;
-const SPEED = 1.5;
-const SPAWN_INTERVAL = 2000;
-const MAX_ACTIVE = 5;
+const RANDOM_MAX_RADIUS = 500;
+const CURSOR_MAX_RADIUS = 300;
+const RANDOM_OPACITY = 0.4;
+const CURSOR_OPACITY = 0.25;
+const SPEED = 2;
+const SPAWN_INTERVAL = 1200;
+const MAX_ACTIVE = 8;
 
 export function createRipple(x, y, opts = {}) {
   const cursor = opts.cursor || false;
@@ -42,6 +42,6 @@ export function drawRipple(ctx, ripple) {
   ctx.beginPath();
   ctx.arc(ripple.x, ripple.y, ripple.radius, 0, Math.PI * 2);
   ctx.strokeStyle = `rgba(108, 99, 255, ${Math.max(0, ripple.opacity)})`;
-  ctx.lineWidth = 1.5;
+  ctx.lineWidth = 2;
   ctx.stroke();
 }
