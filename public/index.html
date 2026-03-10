@@ -4,12 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marc Schmid — The Architect</title>
-  <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/buttons.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/stats.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/quotes.css">
+  <link rel="stylesheet" href="css/tribute.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/effects.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
+  <!-- Gradient mesh blobs -->
+  <div class="gradient-blob gradient-blob-1" style="top: 10%; left: 20%"></div>
+  <div class="gradient-blob gradient-blob-2" style="top: 50%; right: 10%"></div>
+  <div class="gradient-blob gradient-blob-3" style="top: 80%; left: 40%"></div>
+
   <!-- Animated background particles -->
   <canvas id="particles"></canvas>
 
@@ -63,7 +80,7 @@
     </div>
     <div class="scroll-indicator fade-in">
       <span>Scroll</span>
-      <div class="scroll-line"></div>
+      <div class="scroll-chevron"></div>
     </div>
   </section>
 
@@ -245,6 +262,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>
