@@ -1,0 +1,30 @@
+/* responsive.css — Media queries */
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding-top: 8rem;
+    gap: 2rem;
+  }
+  .hero-cta { justify-content: center; }
+  .avatar-ring { width: 220px; height: 220px; }
+  .avatar-glow { width: 280px; height: 280px; }
+  .about-content { grid-template-columns: 1fr; }
+  .about-card { position: static; }
+  .nav-links { display: none; }
+  .nav-toggle { display: flex; }
+  .scroll-indicator { display: none; }
+}
+
+@media (max-width: 600px) {
+  .hero-title { font-size: 2.75rem; }
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+  .quotes-grid { grid-template-columns: 1fr; }
+  .hero-cta { flex-direction: column; align-items: center; }
+  .btn { width: 100%; justify-content: center; }
+}
+
+@media (max-width: 400px) {
+  .stats-grid { grid-template-columns: 1fr; }
+}

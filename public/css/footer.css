@@ -1,0 +1,32 @@
+/* footer.css — Footer */
+
+.footer {
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid var(--border);
+  padding: 3rem 2rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+.footer-content { max-width: 600px; margin: 0 auto; }
+.footer-text {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.footer-sub {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+}
+.footer-post {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.swiss-cross { color: #e3000f; }

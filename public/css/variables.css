@@ -1,0 +1,27 @@
+/* variables.css — Custom properties */
+
+:root {
+  --bg: #0a0a0f;
+  --bg-card: #12121a;
+  --bg-card-hover: #1a1a25;
+  --border: rgba(255, 255, 255, 0.06);
+  --border-hover: rgba(255, 255, 255, 0.12);
+  --text: #e8e8ed;
+  --text-muted: #8888a0;
+  --text-dim: #555570;
+  --accent: #6c63ff;
+  --accent-glow: rgba(108, 99, 255, 0.3);
+  --accent-soft: rgba(108, 99, 255, 0.08);
+  --gradient: linear-gradient(135deg, #6c63ff, #a855f7);
+  --gradient-subtle: linear-gradient(135deg, rgba(108, 99, 255, 0.1), rgba(168, 85, 247, 0.1));
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --mono: 'JetBrains Mono', monospace;
+  --radius: 16px;
+  --radius-sm: 10px;
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Premium effect variables */
+  --bg-card-glass: rgba(18, 18, 26, 0.6);
+  --transition-luxury: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --glow-accent: 0 0 40px rgba(108, 99, 255, 0.3);
+}

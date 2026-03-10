@@ -1,0 +1,49 @@
+/* quotes.css — Quotes section */
+
+.quotes {
+  position: relative;
+  z-index: 1;
+  padding: 6rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.quotes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+.quote-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem;
+  transition: all var(--transition);
+  position: relative;
+}
+.quote-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-hover);
+  transform: translateY(-3px);
+}
+.quote-mark {
+  font-size: 4rem;
+  line-height: 1;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 900;
+  margin-bottom: -0.5rem;
+}
+.quote-text {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text);
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+.quote-author {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
