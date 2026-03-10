@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marc Schmid — The Architect</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Animated background particles -->
+  <canvas id="particles"></canvas>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <span class="nav-logo">M<span class="accent">.</span>S</span>
+      <div class="nav-links">
+        <a href="#hero">Home</a>
+        <a href="#stats">Impact</a>
+        <a href="#about">Legend</a>
+        <a href="#quotes">Wisdom</a>
+        <a href="#tribute">Tribute</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#hero">Home</a>
+    <a href="#stats">Impact</a>
+    <a href="#about">Legend</a>
+    <a href="#quotes">Wisdom</a>
+    <a href="#tribute">Tribute</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-badge fade-in">SWISS POST · LEAD ARCHITECT</div>
+      <h1 class="hero-title fade-in">
+        <span class="hero-first">Marc</span>
+        <span class="hero-last">Schmid</span>
+      </h1>
+      <p class="hero-subtitle fade-in">The architect who doesn't just build systems —<br>he builds the <span class="accent">future</span>.</p>
+      <div class="hero-cta fade-in">
+        <a href="#about" class="btn btn-primary">Discover the Legend</a>
+        <a href="#stats" class="btn btn-outline">See the Impact</a>
+      </div>
+    </div>
+    <div class="hero-avatar fade-in">
+      <div class="avatar-ring">
+        <div class="avatar-ring-inner">
+          <img src="marc.jpg" alt="Marc Schmid" class="avatar-img" id="avatarImg">
+        </div>
+      </div>
+      <div class="avatar-glow"></div>
+    </div>
+    <div class="scroll-indicator fade-in">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats" id="stats">
+    <div class="section-header fade-in">
+      <span class="section-tag">Impact</span>
+      <h2>By the Numbers</h2>
+      <p>Quantifying the unquantifiable.</p>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-card fade-in">
+        <div class="stat-number" data-target="15">0</div>
+        <div class="stat-suffix">+</div>
+        <div class="stat-label">Years at Swiss Post</div>
+        <div class="stat-bar"><div class="stat-bar-fill" style="--fill: 95%"></div></div>
+      </div>
+      <div class="stat-card fade-in">
+        <div class="stat-number" data-target="1000">0</div>
+        <div class="stat-suffix">s</div>
+        <div class="stat-label">Systems Architected</div>
+        <div class="stat-bar"><div class="stat-bar-fill" style="--fill: 88%"></div></div>
+      </div>
+      <div class="stat-card fade-in">
+        <div class="stat-number" data-target="99">0</div>
+        <div class="stat-suffix">.9%</div>
+        <div class="stat-label">Uptime Maintained</div>
+        <div class="stat-bar"><div class="stat-bar-fill" style="--fill: 99%"></div></div>
+      </div>
+      <div class="stat-card fade-in">
+        <div class="stat-number" data-target="0">0</div>
+        <div class="stat-suffix"></div>
+        <div class="stat-label">Days Swiss Post Could Survive Without Him</div>
+        <div class="stat-bar"><div class="stat-bar-fill" style="--fill: 2%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="section-header fade-in">
+      <span class="section-tag">The Legend</span>
+      <h2>Who is Marc Schmid?</h2>
+    </div>
+    <div class="about-content">
+      <div class="about-text fade-in">
+        <p class="about-lead">Some people have jobs. Marc has a <span class="accent">calling</span>.</p>
+        <p>As Lead Architect at Swiss Post, Marc Schmid is the invisible force that keeps one of Switzerland's most critical institutions running. While the rest of the world debates whether to use tabs or spaces, Marc is busy designing systems that handle millions of transactions, connect countless services, and somehow never break.</p>
+        <p>His architectural decisions ripple through every parcel tracked, every letter routed, and every digital service Swiss Post delivers. He doesn't just write code — he orchestrates symphonies of microservices, databases, and APIs that would make lesser architects weep.</p>
+        <div class="about-tags">
+          <span class="tag">Technology Architecture</span>
+          <span class="tag">Data Strategy</span>
+          <span class="tag">System Design</span>
+          <span class="tag">Swiss Precision</span>
+          <span class="tag">Quiet Excellence</span>
+          <span class="tag">Zero Downtime</span>
+        </div>
+      </div>
+      <div class="about-card fade-in">
+        <div class="card-header">
+          <span class="card-icon">⚡</span>
+          <span>Current Status</span>
+        </div>
+        <div class="status-item">
+          <span class="status-dot online"></span>
+          <span>Architecting the future</span>
+        </div>
+        <div class="status-item">
+          <span class="status-dot online"></span>
+          <span>Keeping Swiss Post alive</span>
+        </div>
+        <div class="status-item">
+          <span class="status-dot online"></span>
+          <span>Being irreplaceable</span>
+        </div>
+        <div class="status-item">
+          <span class="status-dot online"></span>
+          <span>Making it look effortless</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quotes Section -->
+  <section class="quotes" id="quotes">
+    <div class="section-header fade-in">
+      <span class="section-tag">Wisdom</span>
+      <h2>Words to Architect By</h2>
+      <p>Inspiration from the masters — and Marc would approve.</p>
+    </div>
+    <div class="quotes-grid">
+      <div class="quote-card fade-in">
+        <div class="quote-mark">"</div>
+        <p class="quote-text">The best architectures are the ones nobody notices — because everything just works.</p>
+        <div class="quote-author">— The Marc Schmid Philosophy</div>
+      </div>
+      <div class="quote-card fade-in">
+        <div class="quote-mark">"</div>
+        <p class="quote-text">Simplicity is the ultimate sophistication.</p>
+        <div class="quote-author">— Leonardo da Vinci (honorary Marc Schmid quote)</div>
+      </div>
+      <div class="quote-card fade-in">
+        <div class="quote-mark">"</div>
+        <p class="quote-text">First, solve the problem. Then, write the code.</p>
+        <div class="quote-author">— John Johnson</div>
+      </div>
+      <div class="quote-card fade-in">
+        <div class="quote-mark">"</div>
+        <p class="quote-text">A system is only as strong as the architect who designed it. Swiss Post is very, very strong.</p>
+        <div class="quote-author">— Everyone at Swiss Post, probably</div>
+      </div>
+      <div class="quote-card fade-in">
+        <div class="quote-mark">"</div>
+        <p class="quote-text">Any fool can write code that a computer can understand. Good programmers write code that humans can understand.</p>
+        <div class="quote-author">— Martin Fowler</div>
+      </div>
+      <div class="quote-card fade-in">
+        <div class="quote-mark">"</div>
+        <p class="quote-text">The strength of the architecture is not in its complexity, but in its clarity.</p>
+        <div class="quote-author">— The Schmid Doctrine</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tribute Section -->
+  <section class="tribute" id="tribute">
+    <div class="tribute-content fade-in">
+      <span class="section-tag">The Truth</span>
+      <h2>What Would Happen Without Marc?</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-time">Hour 1</div>
+          <div class="timeline-event">First system anomaly detected. "It's probably nothing."</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">Hour 4</div>
+          <div class="timeline-event">Three microservices stop talking to each other. Parcels begin routing to the wrong cantons.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">Day 1</div>
+          <div class="timeline-event">The architecture documentation makes no sense without Marc to interpret it. Panic spreads.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">Day 3</div>
+          <div class="timeline-event">Half of Switzerland's mail is stuck in a recursive loop between Bern and Zürich.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">Week 1</div>
+          <div class="timeline-event">Swiss Post reverts to carrier pigeons. The pigeons are overwhelmed.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">Week 2</div>
+          <div class="timeline-event">Switzerland drops from the happiest country rankings. Chocolate production halts due to supply chain collapse.</div>
+        </div>
+        <div class="timeline-item highlight">
+          <div class="timeline-time">Conclusion</div>
+          <div class="timeline-event">Marc Schmid is not just an architect. He is the <span class="accent">load-bearing wall</span> of Swiss Post.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-text">
+        Built with admiration & respect for <span class="accent">Marc Schmid</span>
+      </div>
+      <div class="footer-sub">
+        The architect. The legend. The reason your parcel arrived on time.
+      </div>
+      <div class="footer-post">
+        <svg class="swiss-cross" viewBox="0 0 32 32" width="20" height="20">
+          <rect x="13" y="6" width="6" height="20" fill="currentColor"/>
+          <rect x="6" y="13" width="20" height="6" fill="currentColor"/>
+        </svg>
+        Swiss Post
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
