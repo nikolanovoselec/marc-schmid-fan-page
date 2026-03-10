@@ -2,7 +2,7 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 
 // We test the pure logic, not the canvas rendering
-import { createRipple, updateRipples, shouldSpawnRipple } from '../public/js/ripples.js';
+import { createRipple, updateRipples, shouldSpawnRipple } from '../../public/js/ripples.js';
 
 describe('ripples', () => {
   describe('createRipple', () => {

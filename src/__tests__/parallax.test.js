@@ -1,6 +1,6 @@
 // src/__tests__/parallax.test.js
 import { describe, it, expect } from 'vitest';
-import { calcParallaxOffset, LAYER_SPEEDS } from '../public/js/parallax.js';
+import { calcParallaxOffset, LAYER_SPEEDS } from '../../public/js/parallax.js';
 
 describe('parallax', () => {
   describe('calcParallaxOffset', () => {

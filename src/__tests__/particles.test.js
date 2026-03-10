@@ -1,6 +1,6 @@
 // src/__tests__/particles.test.js
 import { describe, it, expect } from 'vitest';
-import { createParticle, updateParticle, calcParticleCount, getConnectionOpacity } from '../public/js/particles.js';
+import { createParticle, updateParticle, calcParticleCount, getConnectionOpacity } from '../../public/js/particles.js';
 
 describe('particles', () => {
   describe('createParticle', () => {

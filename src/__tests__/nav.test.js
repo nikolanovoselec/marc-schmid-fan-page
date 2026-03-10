@@ -1,6 +1,6 @@
 // src/__tests__/nav.test.js
 import { describe, it, expect } from 'vitest';
-import { shouldShowScrolledNav } from '../public/js/nav.js';
+import { shouldShowScrolledNav } from '../../public/js/nav.js';
 
 describe('nav', () => {
   describe('shouldShowScrolledNav', () => {

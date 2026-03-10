@@ -1,6 +1,6 @@
 // src/__tests__/stat-counters.test.js
 import { describe, it, expect } from 'vitest';
-import { easeOutCubic, interpolateCounter } from '../public/js/stat-counters.js';
+import { easeOutCubic, interpolateCounter } from '../../public/js/stat-counters.js';
 
 describe('stat-counters', () => {
   describe('easeOutCubic', () => {

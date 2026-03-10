@@ -1,6 +1,6 @@
 // src/__tests__/scroll-reveal.test.js
 import { describe, it, expect } from 'vitest';
-import { calcStaggerDelay } from '../public/js/scroll-reveal.js';
+import { calcStaggerDelay } from '../../public/js/scroll-reveal.js';
 
 describe('scroll-reveal', () => {
   describe('calcStaggerDelay', () => {

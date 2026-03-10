@@ -40,16 +40,16 @@ All modules use ES module syntax (`export`/`import`). Each exports pure function
 
 ### Tests (`src/__tests__/`)
 
-One test file per JS module. Tests cover all exported pure functions. DOM-dependent `init*` functions are excluded from coverage (they wire up event listeners).
+**34 tests** across 6 test files. One test file per JS module. Tests cover all exported pure functions. DOM-dependent `init*` functions are excluded from coverage (they wire up event listeners).
 
-| Test File | Covers |
-|-----------|--------|
-| `ripples.test.js` | Ripple creation, update immutability, spawn timing, max active limit |
-| `particles.test.js` | Particle creation bounds, velocity, edge wrapping, count cap, connection opacity |
-| `stat-counters.test.js` | Easing function boundaries/curve, counter interpolation |
-| `scroll-reveal.test.js` | Stagger delay calculation |
-| `parallax.test.js` | Offset calculation, layer speed definitions |
-| `nav.test.js` | Scroll threshold logic |
+| Test File | Tests | Covers |
+|-----------|-------|--------|
+| `ripples.test.js` | 9 | Ripple creation (coordinates, cursor mode), update (expansion, opacity decay, expiry, immutability), spawn timing, max active limit |
+| `particles.test.js` | 9 | Particle creation bounds, velocity movement, edge wrapping, immutability, count cap/scaling, connection opacity (distance, falloff) |
+| `stat-counters.test.js` | 7 | Easing function (boundaries, curve shape, clamping), counter interpolation (start, end, rounding) |
+| `scroll-reveal.test.js` | 2 | Stagger delay at index 0, increment per index |
+| `parallax.test.js` | 4 | Offset at zero, scaling with speed, layer speed completeness, avatar speed ordering |
+| `nav.test.js` | 3 | Scroll below/above/at threshold |
 
 ## Visual Effects
 
