@@ -6,6 +6,7 @@ import { calcParallaxOffset, LAYER_SPEEDS } from './parallax.js';
 import { calcStaggerDelay } from './scroll-reveal.js';
 import { easeOutCubic, interpolateCounter } from './stat-counters.js';
 import { shouldShowScrolledNav } from './nav.js';
+import { createSplashSimulation } from './splash-cursor.js';
 
 // --- Nav ---
 (function initNav() {
@@ -218,4 +219,30 @@ import { shouldShowScrolledNav } from './nav.js';
       lastScrollRipple = now;
     }
   });
+})();
+
+// --- Splash Cursor (WebGL Fluid Simulation) ---
+(function initSplashCursor() {
+  const canvas = document.getElementById('splashCanvas');
+  if (!canvas) return;
+
+  const sim = createSplashSimulation(canvas, {
+    SIM_RESOLUTION: 128,
+    DYE_RESOLUTION: 1440,
+    CAPTURE_RESOLUTION: 512,
+    DENSITY_DISSIPATION: 3.5,
+    VELOCITY_DISSIPATION: 2,
+    PRESSURE: 0.1,
+    PRESSURE_ITERATIONS: 20,
+    CURL: 3,
+    SPLAT_RADIUS: 0.2,
+    SPLAT_FORCE: 6000,
+    SHADING: true,
+    COLOR_UPDATE_SPEED: 10,
+    PAUSED: false,
+    BACK_COLOR: { r: 0.035, g: 0.035, b: 0.043 },
+    TRANSPARENT: true,
+  });
+
+  if (sim) sim.start();
 })();
