@@ -22,11 +22,14 @@ export function createRipple(x, y, opts = {}) {
 
 export function updateRipples(ripples) {
   return ripples
-    .map((r) => ({
-      ...r,
-      radius: r.radius + r.speed,
-      opacity: r.opacity * (1 - r.radius / r.maxRadius),
-    }))
+    .map((r) => {
+      const newRadius = r.radius + r.speed;
+      return {
+        ...r,
+        radius: newRadius,
+        opacity: r.opacity * (1 - newRadius / r.maxRadius),
+      };
+    })
     .filter((r) => r.radius <= r.maxRadius);
 }
 

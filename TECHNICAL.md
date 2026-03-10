@@ -51,6 +51,18 @@ All modules use ES module syntax (`export`/`import`). Each exports pure function
 | `parallax.test.js` | 4 | Offset at zero, scaling with speed, layer speed completeness, avatar speed ordering |
 | `nav.test.js` | 3 | Scroll below/above/at threshold |
 
+### Lines of Code
+
+| Category | Files | Lines |
+|----------|-------|-------|
+| HTML | 1 | 267 |
+| CSS | 13 | 809 |
+| JavaScript | 7 | 365 |
+| Tests | 6 | 241 |
+| **Total** | **27** | **1,682** |
+
+Largest files: `hero.css` (161), `effects.css` (118), `nav.css` (94), `particles.js` (84), `main.js` (78). No file exceeds 200 lines.
+
 ## Visual Effects
 
 ### Particle Network
