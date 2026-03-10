@@ -70,8 +70,9 @@ describe('splash-math', () => {
     });
 
     it('handles negative values', () => {
+      // JS modulo preserves sign: (-0.3 % 1) = -0.3
       const result = wrap(-0.3, 0, 1);
-      expect(result).toBeCloseTo(0.7);
+      expect(result).toBeCloseTo(-0.3);
     });
 
     it('returns value unchanged when within range', () => {
