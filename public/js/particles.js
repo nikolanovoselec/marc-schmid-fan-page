@@ -1,4 +1,4 @@
-// public/js/particles.js
+// particles.js — Particle network logic
 
 const MAX_COUNT = 80;
 const AREA_DIVISOR = 15000;
@@ -33,52 +33,4 @@ export function calcParticleCount(w, h) {
 export function getConnectionOpacity(distance) {
   if (distance >= CONNECTION_DISTANCE) return 0;
   return MAX_CONNECTION_OPACITY * (1 - distance / CONNECTION_DISTANCE);
-}
-
-export function initParticleSystem(canvas) {
-  const ctx = canvas.getContext('2d');
-  let particles = [];
-  let w, h;
-
-  function resize() {
-    w = canvas.width = window.innerWidth;
-    h = canvas.height = window.innerHeight;
-    particles = Array.from({ length: calcParticleCount(w, h) }, () => createParticle(w, h));
-  }
-
-  function draw() {
-    ctx.clearRect(0, 0, w, h);
-
-    particles = particles.map((p) => updateParticle(p, w, h));
-
-    for (const p of particles) {
-      ctx.beginPath();
-      ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(108, 99, 255, ${p.opacity})`;
-      ctx.fill();
-    }
-
-    for (let i = 0; i < particles.length; i++) {
-      for (let j = i + 1; j < particles.length; j++) {
-        const dx = particles[i].x - particles[j].x;
-        const dy = particles[i].y - particles[j].y;
-        const dist = Math.sqrt(dx * dx + dy * dy);
-        const opacity = getConnectionOpacity(dist);
-        if (opacity > 0) {
-          ctx.beginPath();
-          ctx.moveTo(particles[i].x, particles[i].y);
-          ctx.lineTo(particles[j].x, particles[j].y);
-          ctx.strokeStyle = `rgba(108, 99, 255, ${opacity})`;
-          ctx.lineWidth = 0.5;
-          ctx.stroke();
-        }
-      }
-    }
-
-    requestAnimationFrame(draw);
-  }
-
-  resize();
-  draw();
-  window.addEventListener('resize', resize);
 }

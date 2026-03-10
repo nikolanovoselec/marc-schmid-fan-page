@@ -89,9 +89,10 @@ Elements with `.fade-in` start at `opacity: 0`, `translateY(20px)`, `scale(0.97)
 ## Testing
 
 - **Framework:** Vitest with jsdom environment
-- **Coverage:** v8 provider, 80% threshold on statements/branches/functions/lines
-- **Scope:** `public/js/**/*.js` (excludes `main.js` which is integration glue)
+- **Total tests:** 34 across 6 test files
+- **Coverage:** v8 provider, `public/js/**/*.js` (excludes `main.js` which is DOM glue)
 - **Execution:** GitHub Actions only. Never run locally (1 vCPU container constraint)
+- **Architecture:** Pure functions in modules (testable), DOM wiring in `main.js` (excluded from coverage)
 
 ## Deployment
 
